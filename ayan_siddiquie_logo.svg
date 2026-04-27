@@ -1,0 +1,32 @@
+<svg width="500" height="500" viewBox="0 0 500 500" xmlns="http://www.w3.org/2000/svg">
+  <title>Ayan Siddiquie Logo</title>
+  <desc>Personal logo — AS monogram, Engineer · Educator · Innovator</desc>
+
+  <style>
+    .name-text { font-family: 'Georgia', 'Times New Roman', serif; fill: #1a1a2e; letter-spacing: 6px; }
+    .tag-text  { font-family: 'Georgia', 'Times New Roman', serif; fill: #6b6b90; letter-spacing: 3.5px; }
+  </style>
+
+  <circle cx="250" cy="210" r="115" fill="none" stroke="#1a1a2e" stroke-width="1.2" opacity="0.12"/>
+  <circle cx="250" cy="210" r="106" fill="none" stroke="#1a1a2e" stroke-width="0.5" opacity="0.08"/>
+  <circle cx="250" cy="210" r="95"  fill="#1a1a2e"/>
+
+  <path d="M 198 132 A 95 95 0 0 1 302 132" fill="none" stroke="#9b8fe0" stroke-width="3.5" stroke-linecap="round"/>
+
+  <path d="M 174 244 C 202 272, 244 278, 282 266 C 305 257, 318 240, 324 226" fill="none" stroke="#9b8fe0" stroke-width="2.5" stroke-linecap="round"/>
+  <path d="M 192 198 C 183 180, 198 164, 217 172 C 232 178, 230 196, 217 205" fill="none" stroke="rgba(255,255,255,0.38)" stroke-width="1.6" stroke-linecap="round"/>
+
+  <text x="236" y="228" font-family="Georgia,serif" font-size="64" font-weight="700" fill="white" text-anchor="middle">A</text>
+  <text x="278" y="228" font-family="Georgia,serif" font-size="50" font-weight="400" fill="white" text-anchor="middle" opacity="0.72">S</text>
+
+  <circle cx="320" cy="152" r="5" fill="#9b8fe0"/>
+
+  <text x="250" y="358" text-anchor="middle" class="name-text" font-size="19">AYAN SIDDIQUIE</text>
+  <line x1="155" y1="374" x2="345" y2="374" stroke="#1a1a2e" stroke-width="0.6" opacity="0.18"/>
+  <text x="250" y="396" text-anchor="middle" class="tag-text" font-size="10.5">ENGINEER · EDUCATOR · INNOVATOR</text>
+
+  <rect x="178" y="430" width="144" height="46" rx="23" fill="#1a1a2e"/>
+  <circle cx="207" cy="453" r="14" fill="#9b8fe0"/>
+  <text x="207" y="457" font-family="Georgia,serif" font-size="16" font-weight="700" fill="white" text-anchor="middle">A</text>
+  <text x="248" y="458" font-family="Georgia,serif" font-size="13" fill="white" text-anchor="middle" letter-spacing="1" opacity="0.9">AYAN S.</text>
+</svg>
