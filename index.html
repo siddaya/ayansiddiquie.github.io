@@ -264,10 +264,46 @@
     gap: 12px;
   }
 }
+/* Hamburger button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px;
+}
+.hamburger span {
+  width: 24px; height: 2px;
+  background: var(--gold);
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+  .hamburger { display: flex; }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 63px; left: 0; right: 0;
+    background: rgba(13,27,42,0.97);
+    flex-direction: column;
+    gap: 0;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .nav-links.open { display: flex; }
+
+  .nav-links a {
+    font-size: 1rem !important;
+    padding: 14px 24px;
+  }
+}
 </style>
 </head>
 <body>
-
 <nav>
   <div class="nav-logo">
     <a href="#" aria-label="Go to top / Home">
@@ -284,6 +320,12 @@
       </svg>
     </a>
   </div>
+<!-- <button onclick="scrollToTop()" id="backToTop" title="Go to top">  &#8593;</button> -->
+<button class="hamburger" id="hamburger" aria-label="Toggle menu">
+    <span></span>
+    <span></span>
+    <span></span>
+  </button>
   <div class="nav-links">
     <a href="#about" class="nav-link" style="color: rgb(230, 203, 54); font-size: 1.3rem; font-family: Georgia, 'Times New Roman', Times, serif;">About</a>
     <a href="#projects" class="nav-link" style="color: rgb(230, 203, 54); font-size: 1.3rem; font-family: Georgia, 'Times New Roman', Times, serif;">Projects</a>
@@ -532,6 +574,17 @@
 </footer>
 
 <script>
+  const hamburger = document.getElementById('hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('open');
+});
+
+// Close menu when a nav link is clicked
+navLinks.querySelectorAll('a').forEach(link => {
+  link.addEventListener('click', () => navLinks.classList.remove('open'));
+});
   const reveals = document.querySelectorAll('.reveal');
   const observer = new IntersectionObserver((entries) => {
     entries.forEach((e, i) => {
