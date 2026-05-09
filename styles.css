@@ -14,11 +14,94 @@
     background-color: rgba(196, 8, 8, 0.35);
     transform: scale(0.95);
   }
+
+  /* Hamburger button */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px;
+}
+.hamburger span {
+  width: 24px; height: 2px;
+  background: var(--gold);
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+  .hamburger { display: flex; }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 63px; left: 0; right: 0;
+    background: rgba(13,27,42,0.97);
+    flex-direction: column;
+    gap: 0;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .nav-links.open { display: flex; }
+
+  .nav-links a {
+    font-size: 1rem !important;
+    padding: 14px 24px;
+  }
+}
 </style>
 <style>
   .justified {
     text-align: justify;
   }
+
+
+
+<button onclick="scrollToTop()" id="backToTop" title="Go to top">  &#8593;</button>
+
+</style>
+
+<style>
+/* Hamburger button - hidden on desktop */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  gap: 5px;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 4px;
+}
+.hamburger span {
+  width: 24px; height: 2px;
+  background: var(--gold);
+  border-radius: 2px;
+  transition: all 0.3s;
+}
+
+@media (max-width: 768px) {
+  .hamburger { display: flex; }
+
+  .nav-links {
+    display: none;
+    position: absolute;
+    top: 63px; left: 0; right: 0;
+    background: rgba(13,27,42,0.97);
+    flex-direction: column;
+    gap: 0;
+    padding: 12px 0;
+    border-bottom: 1px solid rgba(255,255,255,0.08);
+  }
+  .nav-links.open { display: flex; }
+
+  .nav-links a {
+    font-size: 1rem !important;
+    padding: 14px 24px;
+  }
+}
 </style>
 
 <style>
